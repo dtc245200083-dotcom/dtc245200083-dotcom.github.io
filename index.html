@@ -1,172 +1,186 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Định hướng nghề nghiệp – Sinh viên CNTT</title>
-<style>
-  :root{--brand:#2563eb;--line:#e5e7eb;--ink:#1f2937;--muted:#6b7280;--bg:#f8fafc;--card:#fff}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-  header{background:linear-gradient(135deg,#1d4ed8,#60a5fa);color:#fff;text-align:center;padding:18px 12px}
-  nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:6px}
-  nav a{color:#fff;text-decoration:none;font-weight:700;opacity:.95}
-  nav a:hover{opacity:1}
-  .wrap{max-width:1000px;margin:0 auto;padding:16px}
-  .hero{background:#eef2ff;border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
-  .hero h1{margin:6px 0 4px}
-  .hero p{margin:0;color:#334155}
-  h2{color:#1d4ed8;margin:14px 0 8px}
-  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
-  .title{font-weight:700;margin:6px 0 4px}
-  .sub{color:var(--muted);font-size:13px;margin:0 0 6px}
-  .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 8px;margin:3px 6px 0 0;font-size:12px;background:#fff}
-  .list{display:grid;gap:10px}
-  @media(min-width:760px){.list{grid-template-columns:1fr 1fr}}
-  .road{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px}
-  footer{border-top:1px solid var(--line);background:#fff;color:#555;text-align:center;padding:12px;margin-top:12px}
-  .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:#2563eb;color:#fff;text-decoration:none}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeautyZone - Cửa hàng mỹ phẩm</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fff8fa;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffb6c1;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 30px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Giới thiệu */
+    .intro {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #ffe4ec;
+    }
+
+    .intro h2 {
+      color: #c2185b;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 17px;
+      color: #555;
+    }
+
+    /* Danh sách sản phẩm */
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 30px;
+      padding: 50px 80px;
+      justify-items: center;
+      background-color: #fff8fa;
+    }
+
+    /* Thẻ sản phẩm */
+    .product-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 230px;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .product-card h3 {
+      color: #d63384;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .product-card p {
+      margin: 5px 0 15px;
+      color: #555;
+      font-size: 15px;
+    }
+
+    /* Liên hệ */
+    .contact {
+      background: #ffe4ec;
+      text-align: center;
+      padding: 70px 20px;
+      margin-top: 80px;
+    }
+
+    .contact h2 {
+      color: #c2185b;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .contact form input[type="email"] {
+      padding: 12px;
+      width: 300px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .contact form input[type="submit"] {
+      padding: 12px 25px;
+      background-color: #ff6699;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-left: 10px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .contact form input[type="submit"]:hover {
+      background-color: #ff3385;
+    }
+
+    /* Footer */
+    footer {
+      background: #ffb6c1;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
+  <!-- Header -->
   <header>
-    <div style="font-size:22px;font-weight:800">🎯 Định hướng nghề nghiệp – Sinh viên CNTT</div>
-    <nav>
-      <a href="#nganh">Ngành nghề</a>
-      <a href="#kynang">Kỹ năng</a>
-      <a href="#lotrinh">Lộ trình</a>
-      <a href="#tailieu">Tài nguyên</a>
-      <a href="#lienhe">Liên hệ</a>
-    </nav>
+    💋 BeautyZone - Cửa hàng mỹ phẩm 💄
   </header>
 
-  <main class="wrap">
-    <!-- Hero -->
-    <section class="hero" aria-label="Giới thiệu">
-      <h1>Chọn đúng hướng – Học đúng cách – Đi đúng tốc độ</h1>
-      <p>Gợi ý nghề, kỹ năng cốt lõi và lộ trình 6 tháng cho sinh viên CNTT.</p>
-    </section>
+  <!-- Giới thiệu -->
+  <section class="intro">
+    <h2>Chào mừng đến với BeautyZone</h2>
+    <p>Nơi tôn vinh vẻ đẹp tự nhiên và mang đến cho bạn sự tự tin tỏa sáng mỗi ngày 🌸</p>
+  </section>
 
-    <!-- Ngành nghề -->
-    <section id="nganh">
-      <h2>Ngành nghề phổ biến</h2>
-      <div class="grid">
-        <article class="card">
-          <div class="title">🧩 Backend Developer</div>
-          <p class="sub">Xây API, nghiệp vụ, CSDL</p>
-          <div>
-            <span class="tag">Node/Python/Java</span><span class="tag">REST</span><span class="tag">SQL</span>
-          </div>
-        </article>
-        <article class="card">
-          <div class="title">🎨 Frontend Developer</div>
-          <p class="sub">Website tương tác, UI/UX</p>
-          <div>
-            <span class="tag">HTML/CSS/JS</span><span class="tag">React/Vue</span><span class="tag">Responsive</span>
-          </div>
-        </article>
-        <article class="card">
-          <div class="title">📱 Mobile Developer</div>
-          <p class="sub">Ứng dụng iOS/Android</p>
-          <div>
-            <span class="tag">Flutter</span><span class="tag">Kotlin/Swift</span>
-          </div>
-        </article>
-        <article class="card">
-          <div class="title">📊 Data Analyst</div>
-          <p class="sub">Phân tích dữ liệu & báo cáo</p>
-          <div>
-            <span class="tag">SQL</span><span class="tag">Excel</span><span class="tag">Power BI</span>
-          </div>
-        </article>
-        <article class="card">
-          <div class="title">🤖 AI/ML Engineer</div>
-          <p class="sub">Mô hình học máy & triển khai</p>
-          <div>
-            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">PyTorch/TF</span>
-          </div>
-        </article>
-        <article class="card">
-          <div class="title">🔐 Security Engineer</div>
-          <p class="sub">Bảo mật hệ thống & ứng dụng</p>
-          <div>
-            <span class="tag">OWASP</span><span class="tag">Network</span><span class="tag">SIEM</span>
-          </div>
-        </article>
-        <article class="card">
-          <div class="title">☁️ DevOps/Cloud</div>
-          <p class="sub">Tự động hoá & hạ tầng</p>
-          <div>
-            <span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">AWS/Azure</span>
-          </div>
-        </article>
-        <article class="card">
-          <div class="title">✅ QA/Tester</div>
-          <p class="sub">Kiểm thử thủ công & tự động</p>
-          <div>
-            <span class="tag">Testcase</span><span class="tag">Selenium</span><span class="tag">API Test</span>
-          </div>
-        </article>
-      </div>
-    </section>
+  <!-- Danh sách sản phẩm -->
+  <section class="product-list">
+    <div class="product-card"><img src="./img/a01.jfif"><h3>Son môi cao cấp</h3><p>Giá: 320.000đ</p></div>
+    <div class="product-card"><img src="./img/a02.jfif"><h3>Kem dưỡng da ban đêm</h3><p>Giá: 450.000đ</p></div>
+    <div class="product-card"><img src="./img/a03.jfif"><h3>Sữa rửa mặt thiên nhiên</h3><p>Giá: 180.000đ</p></div>
+    <div class="product-card"><img src="./img/a04.jfif"><h3>Sơn móng tay thời trang</h3><p>Giá: 95.000đ</p></div>
+    <div class="product-card"><img src="./img/a06.webp"><h3>Phấn trang điểm cao cấp</h3><p>Giá: 360.000đ</p></div>
+    <div class="product-card"><img src="./img/a07.jfif"><h3>Kem nền siêu mịn</h3><p>Giá: 410.000đ</p></div>
+    <div class="product-card"><img src="./img/a.webp"><h3>Nước hoa quyến rũ</h3><p>Giá: 520.000đ</p></div>
+    <div class="product-card"><img src="./img/a8.jfif"><h3>Bộ cọ trang điểm 10 món</h3><p>Giá: 250.000đ</p></div>
+    <div class="product-card"><img src="././img/mn9.jfif"><h3>Kem chống nắng SPF50+</h3><p>Giá: 280.000đ</p></div>
+    <div class="product-card"><img src="./img/nh0.webp"><h3>Mascara cong mi</h3><p>Giá: 200.000đ</p></div>
+    <div class="product-card"><img src="./img/kho0.jfif"><h3>Phấn mắt thời thượng</h3><p>Giá: 300.000đ</p></div>
+    <div class="product-card"><img src="./img/789.webp"><h3>Son dưỡng ẩm môi</h3><p>Giá: 150.000đ</p></div>
+  </section>
 
-    <!-- Kỹ năng -->
-    <section id="kynang">
-      <h2>Kỹ năng cốt lõi</h2>
-      <div class="list">
-        <ul class="card">
-          <li>Nắm chắc cấu trúc dữ liệu & thuật toán cơ bản</li>
-          <li>Git & GitHub, quy trình làm việc nhóm</li>
-          <li>SQL cơ bản, mô hình CSDL</li>
-          <li>Nền tảng hệ điều hành & Linux cơ bản</li>
-          <li>OOP, patterns cơ bản</li>
-        </ul>
-        <ul class="card">
-          <li>Kỹ năng viết CV, portfolio & README dự án</li>
-          <li>Giao tiếp, làm việc nhóm, quản lý thời gian</li>
-          <li>Tiếng Anh kỹ thuật</li>
-          <li>Testing cơ bản (unit, integration)</li>
-          <li>Triển khai web đơn giản (GitHub Pages/VPS)</li>
-        </ul>
-      </div>
-    </section>
+  <!-- Liên hệ -->
+  <section class="contact">
+    <h2>Liên hệ với BeautyZone</h2>
+    <form>
+      <input type="email" placeholder="Nhập email của bạn" required>
+      <input type="submit" value="Gửi">
+    </form>
+  </section>
 
-    <!-- Lộ trình 6 tháng -->
-    <section id="lotrinh">
-      <h2>Lộ trình gợi ý (6 tháng)</h2>
-      <ol class="road">
-        <li><b>Tháng 1:</b> Ôn nền tảng CS, Git, HTML/CSS/JS hoặc Python/Java; luyện thuật toán cơ bản.</li>
-        <li><b>Tháng 2–3:</b> Chọn 1 hướng (Frontend/Backend/Data/…) và làm 2–3 mini-project.</li>
-        <li><b>Tháng 4–5:</b> Dự án lớn hơn theo quy trình: thiết kế → làm → test → viết tài liệu; mở mã nguồn trên GitHub.</li>
-        <li><b>Tháng 6:</b> Hoàn thiện CV/Portfolio, mô phỏng phỏng vấn, nộp thực tập/junior.</li>
-      </ol>
-      <p class="sub">Mẹo: Mỗi tuần ít nhất 1 commit chất lượng và 1 bài viết ngắn về điều đã học.</p>
-    </section>
-
-    <!-- Tài nguyên -->
-    <section id="tailieu">
-      <h2>Tài nguyên tự học</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="title">Lộ trình tổng quan</div>
-          <p class="sub">Sơ đồ kỹ năng theo từng nghề</p>
-          <a class="btn" href="#" aria-label="Lộ trình">Xem lộ trình</a>
-        </div>
-        <div class="card">
-          <div class="title">Luyện thuật toán</div>
-          <p class="sub">Bài tập từ dễ đến trung bình</p>
-          <a class="btn" href="#" aria-label="Thuật toán">Bắt đầu luyện</a>
-        </div>
-        <div class="card">
-          <div class="title">Dự án mẫu</div>
-          <p class="sub">Ý tưởng project để xây portfolio</p>
-          <a class="btn" href="#" aria-label="Dự án">Xem gợi ý</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>© 2025 Định hướng nghề nghiệp – Sinh viên CNTT</footer>
+  <!-- Footer -->
+  <footer>
+    © 2025 BeautyZone — Nơi tôn vinh vẻ đẹp Việt 💕
+  </footer>
 </body>
 </html>
