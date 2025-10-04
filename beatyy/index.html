@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeautyZone - Cửa hàng mỹ phẩm</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fff8fa;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffb6c1;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 30px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Giới thiệu */
+    .intro {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #ffe4ec;
+    }
+
+    .intro h2 {
+      color: #c2185b;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 17px;
+      color: #555;
+    }
+
+    /* Danh sách sản phẩm */
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 30px;
+      padding: 50px 80px;
+      justify-items: center;
+      background-color: #fff8fa;
+    }
+
+    /* Thẻ sản phẩm */
+    .product-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 230px;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .product-card h3 {
+      color: #d63384;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .product-card p {
+      margin: 5px 0 15px;
+      color: #555;
+      font-size: 15px;
+    }
+
+    /* Liên hệ */
+    .contact {
+      background: #ffe4ec;
+      text-align: center;
+      padding: 70px 20px;
+      margin-top: 80px;
+    }
+
+    .contact h2 {
+      color: #c2185b;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .contact form input[type="email"] {
+      padding: 12px;
+      width: 300px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .contact form input[type="submit"] {
+      padding: 12px 25px;
+      background-color: #ff6699;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-left: 10px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .contact form input[type="submit"]:hover {
+      background-color: #ff3385;
+    }
+
+    /* Footer */
+    footer {
+      background: #ffb6c1;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    💋 BeautyZone - Cửa hàng mỹ phẩm 💄
+  </header>
+
+  <!-- Giới thiệu -->
+  <section class="intro">
+    <h2>Chào mừng đến với BeautyZone</h2>
+    <p>Nơi tôn vinh vẻ đẹp tự nhiên và mang đến cho bạn sự tự tin tỏa sáng mỗi ngày 🌸</p>
+  </section>
+
+  <!-- Danh sách sản phẩm -->
+  <section class="product-list">
+    <div class="product-card"><img src="./img/a01.jfif"><h3>Son môi cao cấp</h3><p>Giá: 320.000đ</p></div>
+    <div class="product-card"><img src="./img/a02.jfif"><h3>Kem dưỡng da ban đêm</h3><p>Giá: 450.000đ</p></div>
+    <div class="product-card"><img src="./img/a03.jfif"><h3>Sữa rửa mặt thiên nhiên</h3><p>Giá: 180.000đ</p></div>
+    <div class="product-card"><img src="./img/a04.jfif"><h3>Sơn móng tay thời trang</h3><p>Giá: 95.000đ</p></div>
+    <div class="product-card"><img src="./img/a06.webp"><h3>Phấn trang điểm cao cấp</h3><p>Giá: 360.000đ</p></div>
+    <div class="product-card"><img src="./img/a07.jfif"><h3>Kem nền siêu mịn</h3><p>Giá: 410.000đ</p></div>
+    <div class="product-card"><img src="./img/a.webp"><h3>Nước hoa quyến rũ</h3><p>Giá: 520.000đ</p></div>
+    <div class="product-card"><img src="./img/a8.jfif"><h3>Bộ cọ trang điểm 10 món</h3><p>Giá: 250.000đ</p></div>
+    <div class="product-card"><img src="././img/mn9.jfif"><h3>Kem chống nắng SPF50+</h3><p>Giá: 280.000đ</p></div>
+    <div class="product-card"><img src="./img/nh0.webp"><h3>Mascara cong mi</h3><p>Giá: 200.000đ</p></div>
+    <div class="product-card"><img src="./img/kho0.jfif"><h3>Phấn mắt thời thượng</h3><p>Giá: 300.000đ</p></div>
+    <div class="product-card"><img src="./img/789.webp"><h3>Son dưỡng ẩm môi</h3><p>Giá: 150.000đ</p></div>
+  </section>
+
+  <!-- Liên hệ -->
+  <section class="contact">
+    <h2>Liên hệ với BeautyZone</h2>
+    <form>
+      <input type="email" placeholder="Nhập email của bạn" required>
+      <input type="submit" value="Gửi">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 BeautyZone — Nơi tôn vinh vẻ đẹp Việt 💕
+  </footer>
+</body>
+</html>
